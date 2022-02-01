@@ -1,15 +1,99 @@
-body {
-    font-family: Roboto, 'Segoe UI', sans-serif;
+/* --------------------- */
+img {
+    width: 100px;
 }
 
 ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #E5E7EB
+}
+
+/* ---------------------- */
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.hero_back,
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_fore,
+.action_fore {
+    width: 1024px;
+    display: flex;
+}
+
+.hero_fore {
+    flex-direction: column;
+    padding-top: 12px;
+    padding-bottom: 48px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.header ul {
+    gap: 16px;
+}
+
+.header,
+.footer {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.hero_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
     margin: 0;
 }
 
-/*----------------------*/
-.header img {
-    height: 100px;
+.secondary_text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 8px 0;
 }
-/*-----------------------*/
+
+button {
+    padding: 4px 20px;
+    color: #E5E7EB;
+    font-weight: bold;
+    background-color: #3882F6;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.hero_container button {
+    border: 0;
+}
+
+.hero_container img {
+    width: 400px;
+}
