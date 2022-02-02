@@ -17,6 +17,10 @@ a:visited {
     color: #E5E7EB
 }
 
+a:hover {
+    color: #4b6383;
+}
+
 /* ---------------------- */
 
 body {
@@ -103,7 +107,7 @@ button {
 }
 
 .hero_container button {
-    border: 0;
+    border: 1px solid #3882F6;
 }
 
 .hero_container img {
@@ -209,4 +213,12 @@ button {
     display: flex;
     align-items: center;
     min-height: 40px;
+}
+
+button:hover {
+    background-color: #3374df;
+}
+
+button:active {
+    background-color: #2b65c2;
 }
