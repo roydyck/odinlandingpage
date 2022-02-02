@@ -1,11 +1,12 @@
 /* --------------------- */
 img {
-    width: 100px;
+    border-radius: 16px;
 }
 
 ul {
     list-style: none;
-    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -20,6 +21,10 @@ a:visited {
 
 body {
     font-family: Roboto, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .hero_back,
@@ -31,11 +36,12 @@ body {
 
 .hero_fore,
 .action_fore {
-    width: 1024px;
-    display: flex;
+    width: 840px;
+    box-sizing: border-box;
 }
 
 .hero_fore {
+    display: flex;
     flex-direction: column;
     padding-top: 12px;
     padding-bottom: 48px;
@@ -53,6 +59,7 @@ body {
 }
 
 .header ul {
+    display: flex;
     gap: 16px;
 }
 
@@ -81,11 +88,16 @@ body {
     margin: 8px 0;
 }
 
+button,
+.action_fore {
+    background-color: #3882F6;
+    color: #E5E7EB;
+}
+
 button {
     padding: 4px 20px;
-    color: #E5E7EB;
+    height: 32px;
     font-weight: bold;
-    background-color: #3882F6;
     border-width: 2px;
     border-radius: 5px;
 }
@@ -96,4 +108,105 @@ button {
 
 .hero_container img {
     width: 400px;
+}
+
+.info_container {
+    display: flex;
+    justify-content: center;
+}
+
+.info,
+.quote {
+    width: 800px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    gap: 16px;
+    margin: 0;
+}
+
+.info h3 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding: 0;
+    margin: 0;
+}
+
+.info img {
+    height: 100px;
+}
+
+.info ul {
+    display: flex;
+    gap: 16px;
+}
+
+.info li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.quote_container {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 48px 0;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+#author {
+    align-self: flex-end;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.action_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 48px 0;
+}
+
+.action_fore {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    padding: 24px 48px;
+}
+
+#action {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.action_fore div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
 }
